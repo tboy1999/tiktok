@@ -4,7 +4,8 @@
   min-width: 100px;
   padding: 9px 16px;
   border-radius: 4px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   background-color: var(--white);
   border: 1px solid transparent;
@@ -16,6 +17,17 @@
     opacity: 0.5;
     user-select: none;
   }
+}
+
+.icon + .title,
+.title + .icon {
+  margin-left: 8px;
+}
+
+.icon {
+  display: inline-block;
+  text-align: center;
+  width: 24px;
 }
 
 .rounded {
